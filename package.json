@@ -1,0 +1,12 @@
+{
+  "name": "os-quiz-visualizer",
+  "version": "1.0.0",
+  "description": "OS Quiz 1 and 2 Full Stack Visualizer Dashboard",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
