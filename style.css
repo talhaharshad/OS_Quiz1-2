@@ -1,0 +1,41 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    background: #0f172a;
+    color: #f8fafc;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+.dashboard {
+    width: 100%;
+    max-width: 1000px;
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+}
+header { text-align: center; margin-bottom: 30px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 20px; }
+h1 { color: #38bdf8; font-size: 2.2rem; }
+.student-info { color: #94a3b8; margin-top: 10px; }
+.quiz-controls { display: flex; justify-content: center; gap: 20px; margin-bottom: 40px; }
+button {
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+    color: white; border: none; padding: 12px 24px; font-weight: 600;
+    border-radius: 10px; cursor: pointer; transition: 0.3s;
+}
+button:hover { transform: translateY(-2px); }
+.content-section { background: rgba(15, 23, 42, 0.6); border-radius: 14px; padding: 25px; }
+.gantt-chart { display: flex; padding: 20px 0; }
+.gantt-block {
+    background: rgba(14, 165, 233, 0.2); border: 2px solid #38bdf8;
+    color: #f1f5f9; text-align: center; padding: 20px 0; font-weight: bold;
+    position: relative; border-radius: 6px; margin-right: 4px;
+}
+.gantt-time-start { position: absolute; bottom: -25px; left: 0; font-size: 0.8rem; color: #94a3b8; }
+.gantt-time-end { position: absolute; bottom: -25px; right: 0; font-size: 0.8rem; color: #94a3b8; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { padding: 14px; text-align: left; border-bottom: 1px solid #334155; }
+th { background: #0f172a; color: #38bdf8; }
+.stats-container { font-size: 1.2rem; font-weight: 600; color: #34d399; margin-top: 20px; }
