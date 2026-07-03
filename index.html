@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS Quiz Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Operating Systems - Quiz Visualizer</h1>
+            <div class="student-info">
+                <span><strong>Name:</strong> Mehrab Un Nisa Malik</span> | 
+                <span><strong>Reg No:</strong> 8656</span> | 
+                <span><strong>Semester:</strong> 6th</span>
+            </div>
+        </header>
+
+        <div class="quiz-controls">
+            <button onclick="fetchQuiz1('FCFS')">Quiz 1: FCFS</button>
+            <button onclick="fetchQuiz1('SJF')">Quiz 1: SJF</button>
+            <button onclick="fetchQuiz2()">Quiz 2: Priority</button>
+        </div>
+
+        <main class="content-section">
+            <h2 id="quizTitle">Select a Quiz to Fetch Data From Server</h2>
+
+            <div class="gantt-container" id="ganttSection" style="display:none;">
+                <h3>📊 Gantt Chart Timeline</h3>
+                <div id="ganttChart" class="gantt-chart"></div>
+            </div>
+
+            <div class="table-container" id="tableSection" style="display:none;">
+                <h3>📋 Calculations Table</h3>
+                <table id="resultTable">
+                    <thead id="tableHead"></thead>
+                    <tbody id="tableBody"></tbody>
+                </table>
+            </div>
+
+            <div class="stats-container" id="statsSection"></div>
+        </main>
+    </div>
+
+    <script src="frontend.js"></script>
+</body>
+</html>
